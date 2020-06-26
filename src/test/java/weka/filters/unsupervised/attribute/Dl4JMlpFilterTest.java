@@ -132,11 +132,7 @@ public class Dl4JMlpFilterTest {
     String clfPath = Paths.get(tmpDir, "dl4j-mlp-clf.ser").toString();
     saveClf(clfPath, clf);
 
-    for (Layer layer : layers) {
-      // Can't freeze output layer so we don't check this
-      if (!(layer instanceof OutputLayer))
-        checkLayer(clf, dataMnist, new String[] { layer.getLayerName() }, clfPath, false);
-    }
+    checkLayer(clf, dataMnist, new String[] { cl1.getLayerName() }, clfPath, false);
   }
 
   protected void checkZooModelMNIST(AbstractZooModel zooModel, boolean isMeta) throws Exception {
