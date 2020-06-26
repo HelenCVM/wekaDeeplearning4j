@@ -34,7 +34,7 @@ Model names from Keras are prepended with `Keras`, i.e., `KerasResNet`, and simi
 In addition, some models support different variations. Again, it is straightforward to do this via the GUI. 
 To do via command line you must add the `-variation` argument e.g.:
 
-```shell script
+```shell
 ...
 -ZooModel ".KerasResNet -variation RESNET152V2" 
 ...
@@ -96,9 +96,4 @@ investigate famous model architectures.
     * [KerasVGG19](../model-zoo/keras/KerasVGG19.md)
 * Xception
     * [KerasXception](../model-zoo/keras/KerasXception.md)
-
-### Future Work
-
-In the next release of Deeplearning4j, the `swish` activation function will be supported, which will enable the **EfficientNet** family 
-of models to be used in Deeplearning4j (and therefore WekaDeeplearning4j).
 
